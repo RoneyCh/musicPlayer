@@ -12,6 +12,17 @@ html {
     background-color: antiquewhite
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3, h4 {
+    font-weight: 400;
+    color: rgb(90, 86, 86);
+}
+
 @import "./player";
 
 @import "./song";
+
+@import "./library"

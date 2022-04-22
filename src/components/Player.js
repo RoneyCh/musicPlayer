@@ -6,6 +6,7 @@ import {
   faAngleRight,
   faPause,
 } from "@fortawesome/free-solid-svg-icons";
+import { playAudio } from "../util";
 
 const Player = ({
   audioRef,
@@ -33,9 +34,11 @@ const Player = ({
           }
       }
   });
+
   setSongs(selectedSong);
   },[currentSong])
 
+  // Function that plays and pause the song
   const playSongHandler = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -65,16 +68,18 @@ const Player = ({
     if (direction === "skip-back") {
       if (currentIndex - 1 === -1) {
         setCurrentSong(songs[songs.length - 1]);
+        playAudio(isPlaying, audioRef);
         return;
       }
       setCurrentSong(songs[currentIndex - 1]);
     }
+    playAudio(isPlaying, audioRef);
   };
 
   return (
     <div className="player">
       <div className="time-control">
-        <p>{getTime(songInfo.currentTime)}</p>
+        <p>{songInfo.duration ? getTime(songInfo.currentTime) : "0:00"}</p>
         <input
           min={0}
           max={songInfo.duration || 0}

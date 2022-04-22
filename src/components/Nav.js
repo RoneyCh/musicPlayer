@@ -5,7 +5,7 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons";
 const Nav = ({libraryStatus, setLibraryStatus}) => {
     return (
         <nav>
-            <h1>Sumics</h1>
+            <div></div>
             <button onClick={() => setLibraryStatus(!libraryStatus)}>
                 Library
                 <FontAwesomeIcon icon={faMusic} />

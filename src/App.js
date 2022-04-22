@@ -24,7 +24,6 @@ function App() {
     const roundedCurrent = Math.round(current);
     const roundedDuration = Math.round(duration);
     const animationPercentage = Math.round((roundedCurrent / roundedDuration) * 100);
-    console.log(animationPercentage);
     setSongInfo({ ...songInfo, currentTime: current, duration, animationPercentage: animationPercentage });
   };
 
@@ -35,7 +34,7 @@ function App() {
 
   if(isPlaying) audioRef.current.play();
   return (
-    <div>
+    <div className={`App ${libraryStatus ? 'library-active' : ""}`}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song currentSong={currentSong} />
       <Player

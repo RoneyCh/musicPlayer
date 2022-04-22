@@ -75,18 +75,25 @@ const Player = ({
     }
     playAudio(isPlaying, audioRef);
   };
+  // styles
+  const trackAnim = {
+    transform: `translateX(${songInfo.animationPercentage}%)`
+  };
 
   return (
     <div className="player">
       <div className="time-control">
         <p>{songInfo.duration ? getTime(songInfo.currentTime) : "0:00"}</p>
-        <input
-          min={0}
-          max={songInfo.duration || 0}
-          value={songInfo.currentTime}
-          onChange={dragHandler}
-          type="range"
-        />
+        <div style={{background: `linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`}} className="track">
+          <input
+            min={0}
+            max={songInfo.duration || 0}
+            value={songInfo.currentTime}
+            onChange={dragHandler}
+            type="range"
+          />
+          <div style={trackAnim} className="animate-track"></div>
+        </div>
         <p>{getTime(songInfo.duration)}</p>
       </div>
       <div className="play-control">
@@ -95,11 +102,9 @@ const Player = ({
           className="skip-back"
           size="2x"
           icon={faAngleLeft}
-          cursor='pointer'
         />
         <FontAwesomeIcon
           onClick={playSongHandler}
-          cursor="pointer"
           className="play"
           size="2x"
           icon={isPlaying ? faPause : faPlay}
@@ -109,7 +114,6 @@ const Player = ({
           className="skip-forward"
           size="2x"
           icon={faAngleRight}
-          cursor='pointer'
         />
       </div>
     </div>

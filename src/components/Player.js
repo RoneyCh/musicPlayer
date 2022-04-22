@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -19,9 +19,9 @@ const Player = ({
   setCurrentSong,
 }) => {
 
-  useEffect(() => {
+  const activeLibraryHandler = (nextPrev) => {
     const selectedSong = songs.map((s) => {
-      if(s.id === currentSong.id){
+      if(s.id === nextPrev.id){
           return {
               ...s,
               active: true,
@@ -35,7 +35,7 @@ const Player = ({
   });
 
   setSongs(selectedSong);
-  },[currentSong])
+  }
 
   // Function that plays and pause the song
   const playSongHandler = () => {
@@ -63,14 +63,17 @@ const Player = ({
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     if (direction === "skip-forward") {
       await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+      activeLibraryHandler(songs[(currentIndex + 1) % songs.length]);
     }
     if (direction === "skip-back") {
       if (currentIndex - 1 === -1) {
         await setCurrentSong(songs[songs.length - 1]);
+        activeLibraryHandler(songs[songs.length - 1]);
         if(isPlaying) audioRef.current.play();
         return;
       }
       await setCurrentSong(songs[currentIndex - 1]);
+      activeLibraryHandler(songs[songs.length - 1]);
     }
     if(isPlaying) audioRef.current.play();
   };

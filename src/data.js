@@ -1,69 +1,69 @@
 import { v4 as uuidv4 } from "uuid";
 
 
-const chillHop = () => {
+const benSound = () => {
   return [
     {
-      name: "Beaver Creek",
+      name: "Creative Minds",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
-      color: ["#205950", "#2ab3bf"],
+        "https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 940w, https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 1260w, https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1880w, https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://www.bensound.com/bensound-music/bensound-creativeminds.mp3",
+      color: ["#55CEAC", "#ED2375"],
       id: uuidv4(),
       active: true,
     },
     {
-      name: "Daylight",
+      name: "Ukulele",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
-      color: ["#EF8EA9", "#ab417f"],
+        "https://images.pexels.com/photos/2287129/pexels-photo-2287129.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://bensound.com/bensound-music/bensound-ukulele.mp3",
+      color: ["#F6C572", "#439EB1"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Keep Going",
+      name: "Jazzy Frenchy",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
-      color: ["#CD607D", "#c94043"],
+        "https://images.pexels.com/photos/8521994/pexels-photo-8521994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://bensound.com/bensound-music/bensound-jazzyfrenchy.mp3",
+      color: ["#3E3A3A", "#9C9A98"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Nightfall",
+      name: "Creepy",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
-      color: ["#EF8EA9", "#ab417f"],
+        "https://images.pexels.com/photos/10670326/pexels-photo-10670326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 940w, https://images.pexels.com/photos/10670326/pexels-photo-10670326.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 1260w, https://images.pexels.com/photos/10670326/pexels-photo-10670326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 1880w, https://images.pexels.com/photos/10670326/pexels-photo-10670326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://bensound.com/bensound-music/bensound-creepy.mp3",
+      color: ["#F3AC24", "#DF4501"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Reflection",
+      name: "The Jazz Piano",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
-      color: ["#CD607D", "#c94043"],
+        "https://images.pexels.com/photos/8520097/pexels-photo-8520097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://bensound.com/bensound-music/bensound-thejazzpiano.mp3",
+      color: ["#23140B", "#B5B0B5"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Under the City Stars",
+      name: "Tenderness",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-      color: ["#205950", "#2ab3bf"],
+        "https://images.pexels.com/photos/627901/pexels-photo-627901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      artist: "Benjamin Tissot (also known as Bensound)",
+      audio: "https://bensound.com/bensound-music/bensound-tenderness.mp3",
+      color: ["#47161C", "#123D13"],
       id: uuidv4(),
       active: false,
     },
   ];
 }
 
-export default chillHop;
+export default benSound;

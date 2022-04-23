@@ -12,6 +12,7 @@ const benSound = () => {
       color: ["#55CEAC", "#ED2375"],
       id: uuidv4(),
       active: true,
+      alt: "",
     },
     {
       name: "Ukulele",
@@ -22,6 +23,7 @@ const benSound = () => {
       color: ["#F6C572", "#439EB1"],
       id: uuidv4(),
       active: false,
+      alt: "",
     },
     {
       name: "Jazzy Frenchy",
@@ -32,6 +34,7 @@ const benSound = () => {
       color: ["#3E3A3A", "#9C9A98"],
       id: uuidv4(),
       active: false,
+      alt: "",
     },
     {
       name: "Creepy",
@@ -42,6 +45,7 @@ const benSound = () => {
       color: ["#F3AC24", "#DF4501"],
       id: uuidv4(),
       active: false,
+      alt: "",
     },
     {
       name: "The Jazz Piano",
@@ -52,6 +56,7 @@ const benSound = () => {
       color: ["#23140B", "#B5B0B5"],
       id: uuidv4(),
       active: false,
+      alt: "",
     },
     {
       name: "Tenderness",
@@ -62,6 +67,7 @@ const benSound = () => {
       color: ["#47161C", "#123D13"],
       id: uuidv4(),
       active: false,
+      alt: "",
     },
   ];
 }

@@ -11,7 +11,7 @@ nav {
         font-weight: 550;
         transition: all 0.3s ease;
         &:hover {
-            background-color: rgb(117, 104, 37);
+            background-image: linear-gradient(to right, #1dff2c 0%, #00a2ff 100%);
             color: white;
         }
     }
